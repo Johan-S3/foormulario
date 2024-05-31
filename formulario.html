@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de registro</title>
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a el proceso de seleccion de personal...</h1><br>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="formulario.html">Ingresar al proceso de seleccioon de personal</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header><br>
+  <div>
+    <h2>Formulario</h2>
+    <form action="controlador" method="post" autocomplete="off">
+      <div>
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre" minlength="1" maxlength="30" name="edad" required>
+      </div><br>
+
+      <div>
+        <label for="">Ingrese su numúmero de telefono:</label>
+        <input type="text" id="telefono" name="telefono" pattern="[0-9]{0,10}">
+      </div><br>
+
+      <div>
+        <label for="edad">Ingrese su edad:</label>
+        <input type="number" id="edad" step="1" min="1" name="edad">
+      </div><br>
+
+      <div>
+        <label for="">Ingrese su correo electronico:</label>
+        <input type="email" name="email" required>
+      </div><br>
+
+      <div>
+        <label for="genero">Seleccione su genero:</label>
+        <select name="genero" id="genero" name="genero">
+          <option value="masculino" selected>Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="no responde">Prefiero no responder</option>
+        </select>
+      </div><br>
+
+      <div>
+        <label for="sesleccionar">Seleccione su nivel de estudio terminados: </label><br>
+        <label for="">Basica primaria</label><input type="checkbox" value="primaria" name="nivel" checked><br>
+        <label for="">Basica secundaria</label><input type="checkbox" value="secundaria" name="nivel"><br>
+        <label for="">Educacion media</label><input type="checkbox" value="cabhiller" name="nivel"><br>
+      </div><br>
+
+      <div>
+        <label for="">Suba los certificados del nivel de estudio aprobado/s:</label>
+        <input type="file" multiple accept=".pnj, .jpg">
+      </div><br>
+
+      <div>
+        <input type="submit">
+      </div>
+  </div>
+  </form>
+</body>
+
+</html>
